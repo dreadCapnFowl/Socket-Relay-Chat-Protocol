@@ -8,11 +8,18 @@ The client connects to the server.
 Server issues a join broadcast.
 
 The following format is used to serialize messages:
+
+*push* message
 ```javascript
 {
   timestamp: Numeric,
   text: String
 }
 ```
-Messages are sent to the server using a *push* message.
-Server stats, online users are sent via the *stats* message.
+
+*stats* message
+```javascript
+{
+  connections: Numerical  // How many clients are online
+}
+```
