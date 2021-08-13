@@ -8,7 +8,7 @@ The client connects to the server.
 Server issues a join broadcast.
 
 The following format is used to serialize messages:
-```json
+```javascript
 {
   timestamp: Numeric,
   text: String
